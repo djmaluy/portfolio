@@ -8,8 +8,8 @@ body {
 h1,
 h2,
 h3,
-h4 h5 {
-  font-size: 35px;
+h4,
+h5 {
   font-weight: 700;
   color: blue;
 }
@@ -98,15 +98,12 @@ aside p {
 
 .btn__link {
   text-decoration: none;
-  color: #e88025;
+  color: #fff;
   font-size: 35px;
 }
 
 .contacts {
   padding-bottom: 30px;
-}
-
-#contacts {
 }
 
 .contacts__data-link {
