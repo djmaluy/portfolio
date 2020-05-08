@@ -1,16 +1,12 @@
+const myButtonClick = document.getElementById('contacts-btn');
+let AddNewElementWithText = () => {
+  const newElement = document.createElement('div');
+  newElement.innerText = 'How can i do this?';
+  document.body.appendChild(newElement);
+}
+myButtonClick.addEventListener('click', AddNewElementWithText);
 
-const myButton = document.getElementById('contacts-btn');
 
-const myButtonListener = () => {
-
-  let div = document.createElement('div');
-  div.innerHTML = "какой-то текст";
-
-  document.body.appendChild(div);
-
-};
-
-myButton.addEventListener('click', myButtonListener);
 
 
 

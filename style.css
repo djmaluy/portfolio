@@ -1,8 +1,8 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -10,120 +10,196 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 700;
-  color: blue;
+    font-weight: 700;
+    color: blue;
+    font-family: "Roboto Light";
+
 }
 
 p {
-  font-size: 17px;
-  line-height: 1.5;
+    font-size: 17px;
+    line-height: 1.5;
 }
 
 /*  == Header == */
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 140px;
 }
 
-.hero__photo {
-  width: 150px;
-  height: 150px;
-  margin-left: 20px;
+header img {
+    border-radius: 8px;
+}
+
+.nav-wrapper img {
+    margin-bottom: 25px;
+}
+
+nav {
+    background-color: black;
+    padding-bottom: 10px;
+    line-height: 4;
 }
 
 .nav__list {
-  display: flex;
-  list-style: none;
-  margin-right: 85px;
+    display: flex;
+    list-style: none;
+    margin-right: 85px;
+}
+
+.nav__list .nav__link:hover {
+    color: #827f7f;
 }
 
 .nav__item {
-  margin-right: 75px;
-  font-size: 25px;
+    margin-right: 10px;
+    font-size: 25px;
 }
 
 .nav__link {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    text-transform: lowercase;
+    font-weight: normal;
 }
 
 /* == Main == */
 
 .information {
-  padding-left: 20px;
-  background: url("img/background.jpg");
+    background-color: white;
+  padding-top: 40px;
 }
 
-aside {
-  width: 30%;
-  float: right;
-  padding: 0 23px;
-  margin-top: 15px;
-}
-
-aside p {
-  font-style: italic;
-  font-size: 15px;
-  color: blue;
+.row .col.s7 {
+    padding-left: 60px;
 }
 
 .myself {
-  padding-top: 10px;
+    height: 550px;
+}
+
+.myself__title {
+    font-size: 65px;
+    color: #1f1e1e;
+}
+
+.myself__subtitle {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #827f7f;
+    letter-spacing: 2px;
+}
+
+.myself__text {
+    font-size: 20px;
+    line-height: 2.3;
+    color: #1f1e1e;
+}
+
+.skills {
+
+      height: 500px;
+}
+
+.skills__title {
+    color: #1f1e1e;
 }
 
 .skills__list {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-style: italic;
+
+}
+
+.skills__list .skills__item {
+    line-height: 2.3;
+}
+
+.skills__item label {
+    font-size: 25px;
+    color: #827f7f;
+}
+
+ol li {
+    list-style: none;
+}
+
+ol li label{
+    margin-right: 15px;
 }
 
 .works__btn {
-  margin-left: 35px;
-  padding: 15px 30px;
-  background: rgb(21, 255, 0);
-  border-radius: 20px;
-  border: none;
+    margin-left: 35px;
+    padding: 15px 30px;
+    background: rgb(21, 255, 0);
+    border-radius: 20px;
+    border: none;
 
-  transition: background 0.1s linear;
+    transition: background 0.1s linear;
 }
 
 .btn__work:hover {
-  background: #68d7f2;
-  cursor: pointer;
+    background: #68d7f2;
+    cursor: pointer;
 }
 
 .btn__link {
-  text-decoration: none;
-  color: #fff;
-  font-size: 35px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
 }
 
 .contacts {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .contacts__data-link {
-  font-size: 20px;
-  color: #e88025;
-  text-decoration: none;
-  line-height: 1.6;
+    font-size: 20px;
+    color: #e88025;
+    text-decoration: none;
+    line-height: 1.6;
 }
 
 .contacts__data-link:hover {
-  color: blue;
+    color: blue;
 }
 
 .contacts__data-items li {
-  list-style: none;
+    list-style: none;
 }
 
 /* == Footer == */
 
 .footer {
-  margin-top: 100px;
-  text-align: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.page-footer {
+    background-color: #d6d1d1;
+}
+
+.social_items {
+    display: flex;
+
+}
+
+.social_item {
+    margin-right: 38px;
+}
+
+.footer-copyright {
+    text-align: center;
+
+}
+
+.footer-copyright p {
+    color: #1f1e1e;
 }

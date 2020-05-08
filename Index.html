@@ -1,133 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css"/>
     <title>Andrii's portfolio</title>
-  </head>
+</head>
 
-  <body>
-    <!-- Header -->
+<body>
+<!-- Header -->
 
-    <header class="header">
-      <div class="my__photo">
-        <img src="img/my_photo.jpeg" alt="my_photo" class="hero__photo" />
-      </div>
-      <nav class="navigation">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#about__me" class="nav__link">About me</a>
-          </li>
-          <li class="nav__item">
-            <a href="#experience" class="nav__link">Experience</a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">Skills</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contacts" class="nav__link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<header class="header">
+    <div class="container">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#"><img src="img/Logo.png" class="brand-logo" alt="Logo"></a>
+                <ul class="nav__list right hide-on-med-and-down">
+                    <li class="nav__item">
+                        <a href="#about__me" class="nav__link">about me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacts" class="nav__link">Contacts</a>
+                    </li>
+                
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
 
-    <!-- Main information -->
+<!-- Main information -->
 
-    <main class="information">
-      <div class="myself" id="about__me">
-        <aside>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
-            officiis consequuntur odio quos molestias beatae expedita rem sequi
-            natus dicta corrupti saepe atque, sunt, quam architecto debitis,
-            placeat pariatur ab.
-          </p>
-        </aside>
-        <h2 class="myself__title">About me</h2>
-        <p class="myself__text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aliquid
-          deserunt non repudiandae doloremque voluptatem ipsum reiciendis libero
-          ipsa quo vero, velit incidunt quas molestiae at suscipit eos iusto.
-          Quae.
-        </p>
-      </div>
-
-      <div class="experience" id="experience">
-        <h2 class="experience__title">Professional Experience</h2>
-        <p class="experience__text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id saepe
-          ipsa odio ipsum? Quaerat quasi culpa voluptate itaque nostrum eum in,
-          iure voluptatum dolore. Sunt eligendi cum quis sed recusandae.
-        </p>
-      </div>
-
-      <div class="skills" id="skills">
-        <h2 class="skills__title">Professional Skills</h2>
-        <ol class="skills__list">
-          <li class="skills__item">
-            Basic knowledge about HTML5, CSS , MySQL, JavaScript
-          </li>
-          <li class="skills__item">
-            Basic knowledge about software development, software testing
-            techniques and software development life cycle
-          </li>
-          <li class="skills__item">
-            Strong knowledge of testing skills, test case creation, test plans.
-          </li>
-          <li class="skills__item">
-            Network technologies: TCP / IP, DNS, DHCP, NAT, FTP, VPN.
-          </li>
-          <li class="skills__item">
-            Understanding of the client- server architecture, experience to
-            create SQL requests, understanding of Agile principles
-          </li>
-        </ol>
-      </div>
-
-      <div class="works" id="works">
-        <h2 class="works__title">My works</h2>
-        <button class="works__btn">
-          <a class="btn__link" href="#">Посмотреть</a>
-        </button>
-      </div>
-      <div class="contacts">
-        <h2 class="contacts__title">Contacts</h2>
-        <div class="contact__data">
-          <ul class="contacts__data-items">
-            <li>
-              <a href="#" class="contacts__data-link"
-                >Chernihiv region, Ichnya</a
-              >
-            </li>
-            <li>
-              <a class="contacts__data-link" href="#">+380956580757</a>
-            </li>
-            <li>
-              <a href="#" class="contacts__data-link"
-                >andrii.tsvirko@gmail.com</a
-              >
-            </li>
-          </ul>
+<main class="information">
+    <div class="container">
+        <div class="row about_myself">
+            <div class="myself col s5" id="about__me">
+                <h2 class="myself__title">about me</h2>
+                <div class="myself__subtitle">
+                    I am a beginner software developer
+                </div>
+                <p class="myself__text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aliquid
+                    deserunt non repudiandae doloremque voluptatem ipsum reiciendis libero
+                    ipsa quo vero, velit incidunt quas molestiae at suscipit eos iusto.
+                    Quae.
+                </p>
+            </div>
+            <div class="myself__foto col s7">
+                <img src="img/programing.jpg" width="650" height="500" alt="picture">
+            </div>
+        
         </div>
-        <button class="my-button" id="contacts-btn">Нажми меня</button>
-      </div>
-    </main>
+        
+        <div class="experience" id="experience">
+            <h2 class="experience__title">Professional Experience</h2>
+            <p class="experience__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id saepe
+                ipsa odio ipsum? Quaerat quasi culpa voluptate itaque nostrum eum in,
+                iure voluptatum dolore. Sunt eligendi cum quis sed recusandae.
+            </p>
+        </div>
+    </div>
+    
+    <div class="skills" id="skills">
+        <div class="container">
+            <h2 class="skills__title">Professional skills:</h2>
+            <ol class="skills__list">
+                <li class="skills__item">
+                    <label for="html">HTML5:</label>
+                    <progress id="html" max="100" value="75"> 75%</progress>
+                </li>
+                <li class="skills__item">
+                    <label for="css">CSS3:</label>
+                    <progress id="css" max="100" value="70"> 70%</progress>
+                </li>
+                <li class="skills__item">
+                    <label for="js">JavaScript:</label>
+                    <progress id="js" max="100" value="40"> 40%</progress>
+                </li>
+                <li class="skills__item">
+                    <label for="sql">MySQL:</label>
+                    <progress id="sql" max="100" value="80"> 80%</progress>
+                </li>
+                <li class="skills__item">
+                    <label for="bootstrap">Bootstrap:</label>
+                    <progress id="bootstrap" max="100" value="80"> 80%</progress>
+                </li>
+                <li class="skills__item">
+                    <label for="materialize">Materialize:</label>
+                    <progress id="materialize" max="100" value="60"> 60%</progress>
+                </li>
+            </ol>
+        </div>
+    </div>
+    
+    <div class="works" id="works">
+        <div class="container">
+            <h2 class="works__title">My works</h2>
+            <button class="works__btn">
+                <a class="btn__link" href="#">Let's goooo</a>
+            </button>
+            <button class="my-button" id="contacts-btn">Click me</button>
+        </div>
+    </div>
+</main>
 
-    <!-- Footer -->
+<!-- Footer -->
 
-    <footer class="footer">
-      <span>
-        © 2020 all rights reserved
-      </span>
-    </footer>
-    <!--  JS -->
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5>My contacts</h5>
+                <ul class="contacts__data-items">
+                    <li>
+                        <a href="#" class="contacts__data-link "
+                        >Addres: Chernihiv region, Ichnya</a>
+                    </li>
+                    <li>
+                        <a class="contacts__data-link " href="#">tel: +380956580757</a>
+                    </li>
+                
+                </ul>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5>You can find me here</h5>
+                <ul class="social_items">
+                    <li><a class="grey-text text-lighten-3"
+                           href="https://twitter.com/djmaluy1" target="_blank"><img class="social_item"
+                                                                                    src="img/twitter.svg"
+                                                                                    width="35" alt="icon"></a></li>
+                    <li><a class="grey-text text-lighten-3"
+                           href="https://www.linkedin.com/in/andrii-tsvirko/"
+                           target="_blank"><img
+                            class="social_item" src="img/linledin.svg" width="35" alt="icon"></a></li>
+                    <li><a class="grey-text text-lighten-3"
+                           href="https://www.facebook.com/profile.php?id=100015343337267"
+                           target="_blank"><img class="social_item" src="img/facebook.svg" width="33" alt="icon"></a>
+                    </li>
+                    <li><a class="grey-text text-lighten-3" href="mailto:andrii.tsvirko@gmail.com" target="_blank"><img
+                            class="social_item" src="img/gmail.svg"
+                            width="35" alt="icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p> © 2020 Andrii Tsvirko</p>
+        </div>
+    </div>
+</footer>
+<!--  JS -->
 
-    <script src="index.js"></script>
-
-    <script>
-      const newDiv = document.createElement("div");
-      newDiv.innerText = "Hello, I can do JavaScripting! That’s awesome!";
-      document.body.appendChild(newDiv);
-    </script>
-  </body>
+<script src="index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  const newDiv = document.createElement("div");
+  newDiv.innerText = "Hello, I can do JavaScripting! That’s awesome!";
+  document.body.appendChild(newDiv);
+</script>
+</body>
 </html>
