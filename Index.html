@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/materialize-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Andrii's portfolio</title>
 </head>
-
 <body>
+
 <!-- Header -->
 
 <header class="header">
@@ -57,7 +60,6 @@
             </div>
         
         </div>
-        
         <div class="experience" id="experience">
             <h2 class="experience__title">Professional Experience</h2>
             <p class="experience__text">
@@ -67,7 +69,16 @@
             </p>
         </div>
     </div>
-    
+    <div class="leftside">
+        <ul class="leftside_list">
+            <li><a href="https://www.facebook.com/profile.php?id=100015343337267"
+                   target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/djmaluy1" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/andrii-tsvirko/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li><a href="mailto:andrii.tsvirko@gmail.com" target="_blank"><i class="fa fa-google"></i></a></li>
+        </ul>
+    </div>
     <div class="skills" id="skills">
         <div class="container">
             <h2 class="skills__title">Professional skills:</h2>
@@ -96,17 +107,17 @@
                     <label for="materialize">Materialize:</label>
                     <progress id="materialize" max="100" value="60"> 60%</progress>
                 </li>
+                <li class="skills__item">
+                    <label for="react">ReactJS:</label>
+                    <progress id="react" max="100" value="20"> 20%</progress>
+                </li>
             </ol>
         </div>
     </div>
-    
     <div class="works" id="works">
         <div class="container">
             <h2 class="works__title">My works</h2>
-            <button class="works__btn">
-                <a class="btn__link" href="#">Let's goooo</a>
-            </button>
-            <button class="my-button" id="contacts-btn">Click me</button>
+            <input type="button" id="contacts-btn" value="Click me">
         </div>
     </div>
 </main>
@@ -126,27 +137,6 @@
                     <li>
                         <a class="contacts__data-link " href="#">tel: +380956580757</a>
                     </li>
-                
-                </ul>
-            </div>
-            <div class="col l4 offset-l2 s12">
-                <h5>You can find me here</h5>
-                <ul class="social_items">
-                    <li><a class="grey-text text-lighten-3"
-                           href="https://twitter.com/djmaluy1" target="_blank"><img class="social_item"
-                                                                                    src="img/twitter.svg"
-                                                                                    width="35" alt="icon"></a></li>
-                    <li><a class="grey-text text-lighten-3"
-                           href="https://www.linkedin.com/in/andrii-tsvirko/"
-                           target="_blank"><img
-                            class="social_item" src="img/linledin.svg" width="35" alt="icon"></a></li>
-                    <li><a class="grey-text text-lighten-3"
-                           href="https://www.facebook.com/profile.php?id=100015343337267"
-                           target="_blank"><img class="social_item" src="img/facebook.svg" width="33" alt="icon"></a>
-                    </li>
-                    <li><a class="grey-text text-lighten-3" href="mailto:andrii.tsvirko@gmail.com" target="_blank"><img
-                            class="social_item" src="img/gmail.svg"
-                            width="35" alt="icon"></a></li>
                 </ul>
             </div>
         </div>
@@ -157,6 +147,7 @@
         </div>
     </div>
 </footer>
+
 <!--  JS -->
 
 <script src="index.js"></script>
@@ -164,6 +155,7 @@
 <script>
   const newDiv = document.createElement("div");
   newDiv.innerText = "Hello, I can do JavaScripting! That’s awesome!";
+  newDiv.style="font-size: 25px; color: blue; font-style: italic";
   document.body.appendChild(newDiv);
 </script>
 </body>
