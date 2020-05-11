@@ -176,7 +176,7 @@ ol li label {
     list-style: none;
 }
 
-/* == Social icons ==*/
+/* == Social icons == */
 
 .leftside {
     padding: 0;
@@ -186,28 +186,25 @@ ol li label {
 }
 
 .leftside_list {
-    width: 90px;
+    width: 60px;
     position: absolute;
     overflow: hidden;
 }
 
 .leftside li {
     list-style: none;
-    padding: 20px;
+    padding: 15px;
     transition: .6s;
     position: relative;
 }
 
-i {
+.leftside_list li i {
     color: white;
-}
-
-.leftside li i {
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .leftside li:hover {
-    padding: 20px 35px;
+    padding: 15px 23px;
     cursor: pointer;
 }
 

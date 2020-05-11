@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="css/materialize-social.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
-    
     <link rel="stylesheet" href="css/style.css"/>
     <title>Andrii's portfolio</title>
 </head>
@@ -31,7 +29,6 @@
                     <li class="nav__item">
                         <a href="#contacts" class="nav__link">Contacts</a>
                     </li>
-                
                 </ul>
             </div>
         </nav>
@@ -40,6 +37,16 @@
 
 <!-- Main information -->
 
+<div class="leftside">
+    <ul class="leftside_list">
+        <li><a href="https://www.facebook.com/profile.php?id=100015343337267"
+               target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/djmaluy1" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/andrii-tsvirko/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li><a href="mailto:andrii.tsvirko@gmail.com" target="_blank"><i class="fa fa-google"></i></a></li>
+    </ul>
+</div>
 <main class="information">
     <div class="container">
         <div class="row about_myself">
@@ -58,7 +65,6 @@
             <div class="myself__foto col s7">
                 <img src="img/programing.jpg" width="650" height="500" alt="picture">
             </div>
-        
         </div>
         <div class="experience" id="experience">
             <h2 class="experience__title">Professional Experience</h2>
@@ -68,16 +74,6 @@
                 iure voluptatum dolore. Sunt eligendi cum quis sed recusandae.
             </p>
         </div>
-    </div>
-    <div class="leftside">
-        <ul class="leftside_list">
-            <li><a href="https://www.facebook.com/profile.php?id=100015343337267"
-                   target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/djmaluy1" target="_blank"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/andrii-tsvirko/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li><a href="mailto:andrii.tsvirko@gmail.com" target="_blank"><i class="fa fa-google"></i></a></li>
-        </ul>
     </div>
     <div class="skills" id="skills">
         <div class="container">
@@ -155,7 +151,7 @@
 <script>
   const newDiv = document.createElement("div");
   newDiv.innerText = "Hello, I can do JavaScripting! That’s awesome!";
-  newDiv.style="font-size: 25px; color: blue; font-style: italic";
+  newDiv.style = "font-size: 25px; color: blue; font-style: italic";
   document.body.appendChild(newDiv);
 </script>
 </body>
