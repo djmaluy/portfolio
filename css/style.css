@@ -14,7 +14,6 @@ h5 {
     font-weight: 700;
     color: blue;
     font-family: "Roboto Light";
-
 }
 
 p {
@@ -24,7 +23,7 @@ p {
 
 /*  == Header == */
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,12 +75,12 @@ nav {
     padding-top: 40px;
 }
 
-.row .col.s7 {
-    padding-left: 60px;
-}
-
 .myself {
     height: 550px;
+}
+
+.myself__picture img {
+    margin-left: 180px;
 }
 
 .myself__title {
@@ -91,7 +90,7 @@ nav {
 
 .myself__subtitle {
     font-size: 24px;
-    line-height: 1.6;
+    line-height: 1.9;
     color: #827f7f;
     letter-spacing: 2px;
 }
@@ -103,8 +102,12 @@ nav {
 }
 
 .skills {
-
     height: 500px;
+}
+
+.test {
+    display: flex;
+    justify-content: space-between;
 }
 
 .skills__title {
@@ -116,7 +119,6 @@ nav {
     font-weight: 400;
     line-height: 1.5;
     font-style: italic;
-
 }
 
 .skills__list .skills__item {
@@ -142,7 +144,6 @@ ol li label {
     background: rgb(21, 255, 0);
     border-radius: 20px;
     border: none;
-
     transition: background 0.1s linear;
 }
 
@@ -178,53 +179,53 @@ ol li label {
 
 /* == Social icons == */
 
-.leftside {
+aside {
     padding: 0;
     margin: 0;
     position: fixed;
     top: 25%;
 }
 
-.leftside_list {
+.aside_list {
     width: 60px;
     position: absolute;
     overflow: hidden;
 }
 
-.leftside li {
+aside li {
     list-style: none;
     padding: 15px;
     transition: .6s;
     position: relative;
 }
 
-.leftside_list li i {
+.aside_list li i {
     color: white;
     font-size: 25px;
 }
 
-.leftside li:hover {
+aside li:hover {
     padding: 15px 23px;
     cursor: pointer;
 }
 
-.leftside li:nth-child(1) {
+aside li:nth-child(1) {
     background: #3b5998;
 }
 
-.leftside li:nth-child(2) {
+aside li:nth-child(2) {
     background: #1da1f2;
 }
 
-.leftside li:nth-child(3) {
+aside li:nth-child(3) {
     background: #007bb5;
 }
 
-.leftside li:nth-child(4) {
+aside li:nth-child(4) {
     background: #ea4335;
 }
 
-.leftside li:nth-child(5) {
+aside li:nth-child(5) {
     background: #0088cc;
 }
 
@@ -241,7 +242,6 @@ ol li label {
 
 .social_items {
     display: flex;
-
 }
 
 .social_item {
@@ -250,7 +250,6 @@ ol li label {
 
 .footer-copyright {
     text-align: center;
-
 }
 
 .footer-copyright p {
