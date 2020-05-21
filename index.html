@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
     <link rel="stylesheet" href="css/style.css"/>
@@ -12,9 +13,11 @@
 <!-- Header -->
 
 <header>
-    <div class="container">
+    <div class="container col s12">
         <nav>
             <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i></a>
                 <a href="#"><img src="img/Logo.png" class="brand-logo" alt="Logo"></a>
                 <ul class="nav__list right hide-on-med-and-down">
                     <li class="nav__item">
@@ -32,6 +35,20 @@
                 </ul>
             </div>
         </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li class="nav__item">
+                <a href="#about__me" class="nav__link">about me</a>
+            </li>
+            <li class="nav__item">
+                <a href="#experience" class="nav__link">Experience</a>
+            </li>
+            <li class="nav__item">
+                <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+                <a href="#contacts" class="nav__link">Contacts</a>
+            </li>
+        </ul>
     </div>
 </header>
 
@@ -49,81 +66,72 @@
 </aside>
 <main class="information">
     <div class="container">
-        <section class="row about_myself">
-            <div class="myself col s5" id="about__me">
-                <article>
-                    <h2 class="myself__title">about me</h2>
-                    <div class="myself__subtitle">
-                        I am a beginner software developer
-                    </div>
-                    <div class="myself__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aliquid
-                        deserunt non repudiandae doloremque voluptatem ipsum reiciendis libero
-                        ipsa quo vero, velit incidunt quas molestiae at suscipit eos iusto.
-                        Quae.
-                    </div>
-                </article>
-            </div>
+        <div class="row about_myself">
+            <article class="myself col s5" id="about__me">
+                <h2 class="myself__title">about me</h2>
+                <div class="myself__subtitle">
+                    I am a beginner software developer
+                </div>
+                <div class="myself__text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aliquid
+                    deserunt non repudiandae doloremque voluptatem ipsum reiciendis libero
+                    ipsa quo vero, velit incidunt quas molestiae at suscipit eos iusto.
+                    Quae.
+                </div>
+            </article>
             <div class="myself__picture col s7">
                 <img src="img/photo_500.jpg" alt="picture">
             </div>
-        </section>
-        <section class="experience" id="experience">
-            <article>
-                <h2 class="experience__title">Professional Experience</h2>
-                <div class="experience__text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id saepe
-                    ipsa odio ipsum? Quaerat quasi culpa voluptate itaque nostrum eum in,
-                    iure voluptatum dolore. Sunt eligendi cum quis sed recusandae.
-                </div>
-            </article>
-        </section>
-    </div>
-    <section class="skills" id="skills">
-        <article>
-            <div class="container">
-                <h2 class="skills__title">Professional skills:</h2>
-                <div class="test">
-                    <div>
-                        <ol class="skills__list">
-                            <li class="skills__item">
-                                <label for="html">HTML5:</label>
-                                <progress id="html" max="100" value="75"> 75%</progress>
-                            </li>
-                            <li class="skills__item">
-                                <label for="css">CSS3:</label>
-                                <progress id="css" max="100" value="70"> 70%</progress>
-                            </li>
-                            <li class="skills__item">
-                                <label for="js">JavaScript:</label>
-                                <progress id="js" max="100" value="40"> 40%</progress>
-                            </li>
-                            <li class="skills__item">
-                                <label for="sql">MySQL:</label>
-                                <progress id="sql" max="100" value="80"> 80%</progress>
-                            </li>
-                            <li class="skills__item">
-                                <label for="bootstrap">Bootstrap:</label>
-                                <progress id="bootstrap" max="100" value="80"> 80%</progress>
-                            </li>
-                            <li class="skills__item">
-                                <label for="materialize">Materialize:</label>
-                                <progress id="materialize" max="100" value="60"> 60%</progress>
-                            </li>
-                            <li class="skills__item">
-                                <label for="react">ReactJS:</label>
-                                <progress id="react" max="100" value="20"> 20%</progress>
-                            </li>
-                        </ol>
-                    </div>
-                    <div>
-                        <img src="img/frontend.png" alt="pic"/>
-                    </div>
-                </div>
-            
+        </div>
+        <article class="experience" id="experience">
+            <h2 class="experience__title">Professional Experience</h2>
+            <div class="experience__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id saepe
+                ipsa odio ipsum? Quaerat quasi culpa voluptate itaque nostrum eum in,
+                iure voluptatum dolore. Sunt eligendi cum quis sed recusandae.
             </div>
         </article>
-    </section>
+    </div>
+    <article class="skills" id="skills">
+        <div class="container col s12">
+            <h2 class="skills__title">Professional skills:</h2>
+            <div class="test">
+                <ol class="skills__list">
+                    <li class="skills__item">
+                        <label for="html">HTML5:</label>
+                        <progress id="html" max="100" value="75"></progress>
+                    </li>
+                    <li class="skills__item">
+                        <label for="css">CSS3:</label>
+                        <progress id="css" max="100" value="70"></progress>
+                    </li>
+                    <li class="skills__item">
+                        <label for="js">JavaScript:</label>
+                        <progress id="js" max="100" value="40"></progress>
+                    </li>
+                    <li class="skills__item">
+                        <label for="sql">MySQL:</label>
+                        <progress id="sql" max="100" value="80"></progress>
+                    </li>
+                    <li class="skills__item">
+                        <label for="bootstrap">Bootstrap:</label>
+                        <progress id="bootstrap" max="100" value="80"></progress>
+                    </li>
+                    <li class="skills__item">
+                        <label for="materialize">Materialize:</label>
+                        <progress id="materialize" max="100" value="60"></progress>
+                    </li>
+                    <li class="skills__item">
+                        <label for="react">ReactJS:</label>
+                        <progress id="react" max="100" value="20"></progress>
+                    </li>
+                </ol>
+                <div>
+                    <img src="img/frontend.png" alt="pic"/>
+                </div>
+            </div>
+        </div>
+    </article>
     <section class="works" id="works">
         <div class="container">
             <h2 class="works__title">My works</h2>
@@ -138,26 +146,27 @@
 <footer class="page-footer">
     <div class="container">
         <div class="row">
-            <div class="col l6 s12">
+            <section class="col l6 s12">
                 <h5>My contacts</h5>
                 <ul class="contacts__data-items">
                     <li>
-                        <a href="#" class="contacts__data-link "
+                        <a href="#" class="contacts__data-link"
                         >Addres: Chernihiv region, Ichnya</a>
                     </li>
                     <li>
-                        <a class="contacts__data-link " href="tel:+380956580757">tel: +380956580757</a>
+                        <a class="contacts__data-link" href="tel:+380956580757">tel: +380956580757</a>
                     </li>
                 </ul>
-            </div>
+            </section>
         </div>
     </div>
-    <div class="footer-copyright">
+    <section class="footer-copyright">
         <div class="container">
             <p> © 2020 Andrii Tsvirko</p>
         </div>
-    </div>
+    </section>
 </footer>
+
 
 <!--  JS -->
 

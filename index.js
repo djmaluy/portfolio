@@ -9,15 +9,21 @@ myButtonClick.addEventListener('click', addNewElementWithText);
 
 
 let clickButtonToShowMyName = document.getElementById("myButton");
-let showMyNameByHover = () => {
-  console.log("Andrii");
-}
-let showMyNameByClick = () => {
-  alert('Andrii')
-}
-clickButtonToShowMyName.addEventListener('click', showMyNameByClick);
-clickButtonToShowMyName.addEventListener('mousemove', showMyNameByHover );
+clickButtonToShowMyName.addEventListener('click', () => {
+  alert("Andrii");
+});
+ clickButtonToShowMyName.addEventListener('mousemove', () => {
+  console.log('Andrii')
+} );
 
+document.addEventListener('DOMContentLoaded', function() {
+  let elems = document.querySelectorAll('.sidenav');
+  M.Sidenav.init(elems);
+});
 
+const text = "Hello i'm studying java script";
+// const reverseText = text.split('');
+const reverseText = text.split('').reverse().join('');
+console.log(reverseText)
 
 
